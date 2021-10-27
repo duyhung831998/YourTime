@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#211D44"
+    tools:context=".CountDown">
+
+    <EditText
+        android:id="@+id/ct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16d1dd"
+        android:hint="Choose Hour"
+        />
+    <EditText
+        android:id="@+id/ct1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16d1dd"
+        android:hint="Choose Minute"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/ct2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#16d1dd"
+        android:hint="Choose Sec"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp"
+        />
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:background="#48B9AC"/>
+    <Chronometer
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="190dp"
+        android:textSize="50dp"
+        android:countDown="true"
+        android:id="@+id/time1"
+        android:textColor="#FFF"
+        />
+
+
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/time1"
+        android:layout_marginTop="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="6dp"
+        android:text="Start"
+        android:background="#48B9AC"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/time1"
+        android:layout_marginTop="120dp"
+        android:layout_alignLeft="@id/btStart"
+        android:layout_marginLeft="100dp"
+        android:text="Pause"
+        android:background="#48B9AC"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_alignTop="@id/time1"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btStart"
+        android:layout_marginLeft="200dp"
+        android:text="Reset"
+        android:background="#48B9AC"
+        android:textColor="#FFF"/>
+
+    <Button
+        android:id="@+id/btBack"
+        android:layout_alignTop="@id/time1"
+        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/btStart"
+        android:layout_marginLeft="310dp"
+        android:text="Back"
+        android:background="#48B9AC"
+        android:textColor="#FFF"/>
+    <ImageView
+        android:id="@+id/man"
+        android:layout_width="358dp"
+        android:layout_height="340dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/icget"
+        android:layout_alignTop="@id/time1"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
